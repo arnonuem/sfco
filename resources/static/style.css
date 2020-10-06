@@ -11,20 +11,28 @@ textarea {
 }
 
 .mt-1 {
-    margin-top: 1rem;
+    margin-top: 16px;
 }
 
 .flex-container-centered {
-    display:flex;
+    flex: 1 1 auto;
     display:-webkit-flex;
     justify-content:center;
     -webkit-justify-content:center;
     flex-wrap: wrap;
 }
 
+/*.flex-container-centered > * {*/
+/*    flex-grow: 1;*/
+/*    flex-shrink: 1;*/
+/*    flex-basis: 410px;*/
+/*}*/
+
 .character {
     border: 1px solid lightcyan;
-    padding: 1rem;
+    padding: 16px;
+    min-width: 300px;
+    max-width: 300px;
 }
 
 .character h3 {
@@ -48,9 +56,9 @@ textarea {
 .form-group label {
     flex: none;
     display: block;
-    width: 125px;
+    width: 120px;
     font-weight: bold;
-    font-size: 1em;
+    font-size: 0.75em;
 }
 .form-group label.right-inline {
     text-align: right;
@@ -66,4 +74,5 @@ textarea {
     margin-right: 8px;
     padding: 4px;
     margin-top: -4px;
+    max-width: 160px;
 }
